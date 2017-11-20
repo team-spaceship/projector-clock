@@ -19,9 +19,7 @@
         "large": "./assets/images/large.png",
         "small": "./assets/images/small.png"
     },
-    "dependencies": {
-        "request": "*"
-    },
+    "dependencies": {},
     "permissions": [
         "projector:manager:measure-light"
     ]
