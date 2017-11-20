@@ -1,0 +1,29 @@
+{
+    "id": "projector-clock",
+    "name": {
+        "en": "Clock",
+        "nl": "Klok"
+    },
+    "category": "utility",
+    "version": "0.0.1",
+    "compatibility": "0.x || 1.x",
+    "author": {
+        "name": "Tim van de Vathorst",
+        "email": "tim@vandevathorst.nl",
+        "website": "lumos.space",
+        "github": "https://github.com/team-spaceship/projector-clock"
+    },
+    "description": {
+        "en": "Displays a clock and can set the alarm"
+    },
+    "images": {
+        "large": "./assets/images/large.png",
+        "small": "./assets/images/small.png"
+    },
+    "dependencies": {
+        "request": "*"
+    },
+    "permissions": [
+        "projector:manager:measure-light"
+    ]
+}
