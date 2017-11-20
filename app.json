@@ -4,7 +4,6 @@
         "en": "Clock",
         "nl": "Klok"
     },
-    "category": "utility",
     "version": "0.0.1",
     "compatibility": "0.x || 1.x",
     "author": {
