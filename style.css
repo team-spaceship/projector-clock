@@ -1,4 +1,5 @@
 .Clock {
-    background: white;
-    color: black;
+    color: #fff;
+    padding: 200px 15px;
+    font-size: 8em;
 }
