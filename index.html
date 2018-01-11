@@ -168,7 +168,10 @@
 
 <script>
   function init() {
-    setInterval(function () {
+    if(typeof klokinterval == "number") {
+      clearInterval(klokinterval);
+    }
+    klokinterval = setInterval(function () {
       setDate();
     }, 1000);
   }
