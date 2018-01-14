@@ -1,8 +1,7 @@
 {
-    "id": "projector-clock",
+    "id": "projector-dashboard",
     "name": {
-        "en": "Clock",
-        "nl": "Klok"
+        "en": "Dashboard"
     },
     "version": "0.0.1",
     "compatibility": "0.x || 1.x",
@@ -10,10 +9,10 @@
         "name": "Tim van de Vathorst",
         "email": "tim@vandevathorst.nl",
         "website": "lumos.space",
-        "github": "https://github.com/team-spaceship/projector-clock"
+        "github": "https://github.com/team-spaceship/projector-dashboard"
     },
     "description": {
-        "en": "Displays a clock and can set the alarm"
+        "en": "Dashboard for Lumos"
     },
     "images": {
         "large": "./assets/images/large.png",
