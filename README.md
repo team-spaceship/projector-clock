@@ -1,3 +1,3 @@
-# projector dashboard
+# projector clock
 
-Dashboard for lumos
+This app will show a clock on Lumos
