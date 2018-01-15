@@ -167,15 +167,19 @@
 -->
 
 <script>
-  var clockHeight = document.getElementById('clock').offsetHeight;
-  var clockWidth = document.getElementById('clock').style.width=clockHeight - 24;
+  var clockHeight, clockWidth;
   function init() {
+    var clock = document.getElementById('clock');
     if(typeof klokinterval == "number") {
       clearInterval(klokinterval);
     }
     klokinterval = setInterval(function () {
       setDate();
     }, 1000);
+    if(clock) {
+      clockHeight = document.getElementById('clock').offsetHeight;
+      clockWidth = document.getElementById('clock').style.width=clockHeight - 24;
+    }
   }
 
   function setDate() {
