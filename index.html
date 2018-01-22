@@ -174,13 +174,19 @@
   var clockHeight, clockWidth;
   function startClock() {
     // var clock = document.getElementById('clock');
-    if(typeof window.interval == "number") {
-      clearInterval(window.interval);
+    if(typeof interval == "number") {
+      clearInterval(interval);
     }
+    
     setTimeout(function() {
-      window.interval = setInterval(function () {
+      var interval = setInterval(function () {
         setDate();
       }, 1000);
+      
+      if(window.interval && typeof window.interval == "object") {
+        window.interval.push(interval)
+      }
+      
       // if(clock) {
       //   clockWidth = document.getElementById('clock').offsetWidth; 
       //   clockHeight = document.getElementById('clock').style.height=clockWidth - 24;
