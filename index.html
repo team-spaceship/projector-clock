@@ -174,16 +174,18 @@
   var clockHeight, clockWidth;
   function init() {
     // var clock = document.getElementById('clock');
-    if(typeof klokinterval == "number") {
-      clearInterval(klokinterval);
+    if(typeof window.interval == "number") {
+      clearInterval(window.interval);
     }
-    klokinterval = setInterval(function () {
-      setDate();
-    }, 1000);
-    // if(clock) {
-    //   clockWidth = document.getElementById('clock').offsetWidth; 
-    //   clockHeight = document.getElementById('clock').style.height=clockWidth - 24;
-    // }
+    setTimeout(function() {
+      window.interval = setInterval(function () {
+        setDate();
+      }, 1000);
+      // if(clock) {
+      //   clockWidth = document.getElementById('clock').offsetWidth; 
+      //   clockHeight = document.getElementById('clock').style.height=clockWidth - 24;
+      // }
+    }, 100);
   }
 
   function setDate() {
